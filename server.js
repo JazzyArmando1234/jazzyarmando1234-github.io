@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/res', (req, res) => {
+    res.send("ETSTESTETESTSETTTSTETETSETETSETSETSETSETTETESETSSETTETSETESTSE")
+  });
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
